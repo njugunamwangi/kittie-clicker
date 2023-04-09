@@ -1,10 +1,25 @@
 <template>
-  <div class="main-page p-d-flex p-jc-center p-ai-center">
+  <div class="main-page p-d-flex p-flex-column p-jc-center p-ai-center">
     <h1>KitKat</h1>
-    <p>Purrs: 19999</p>
-    <div class="cat-circle"></div>
+    <p>Purrs: {{ purrs }}</p>
+    <div @click="incrementPurrs" class="cat-circle"></div>
   </div>
 </template>
+
+<script>
+export default {
+  data: function () {
+    return {
+      purrs: 0,
+    };
+  },
+  methods: {
+    incrementPurrs() {
+      this.purrs++;
+    },
+  },
+};
+</script>
 
 <style scoped lang="sass">
 .cat-circle
