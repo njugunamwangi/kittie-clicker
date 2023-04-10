@@ -10,6 +10,8 @@
 </template>
 
 <script>
+import Button from "primevue/button";
+import InputText from "primevue/inputtext";
 export default {
   name: "WelcomeView",
   components: {
