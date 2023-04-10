@@ -11,7 +11,11 @@ export default createStore({
     ],
   },
   getters: {},
-  mutations: {},
+  mutations: {
+    updateKittenInfo(state, { field, value }) {
+      state[field] = value;
+    },
+  },
   actions: {},
   modules: {},
 });
