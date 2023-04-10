@@ -12,6 +12,7 @@
 <script>
 import Button from "primevue/button";
 import InputText from "primevue/inputtext";
+import { mapMutations, mapState } from "vuex";
 export default {
   name: "WelcomeView",
   components: {
