@@ -13,6 +13,9 @@ export default {
       purrs: 0,
     };
   },
+  computed: {
+    ...mapState(["kittenName", "kittenUrl"]),
+  },
   methods: {
     incrementPurrs() {
       this.purrs++;
