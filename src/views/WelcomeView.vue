@@ -45,6 +45,9 @@ export default {
     ...mapState(["kittenName", "kittenUrl", "kittens"]),
   },
     ...mapMutations(["updateKittenInfo"]),
+    selectKitten(kittenUrl) {
+      this.updateKittenInfo({ field: "kittenUrl", value: kittenUrl });
+    },
 };
 </script>
 
