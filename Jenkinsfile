@@ -40,5 +40,11 @@ pipeline {
       }
     }
 
+    stage('Push') {
+      steps {
+        sh 'docker push njugunamwangi/kittie-clicker:latest'
+      }
+    }
+
   }
 }
