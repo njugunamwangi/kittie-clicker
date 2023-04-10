@@ -1,12 +1,13 @@
 <template>
   <div class="main-page p-d-flex p-flex-column p-jc-center p-ai-center">
-    <h1>KitKat</h1>
+    <h1>{{ kittenName }}</h1>
     <p>Purrs: {{ purrs }}</p>
-    <div @click="incrementPurrs" class="cat-circle"></div>
+    <img @click="incrementPurrs" :src="kittenUrl" class="cat-circle" />
   </div>
 </template>
 
 <script>
+import { mapState } from "vuex";
 export default {
   data: function () {
     return {
