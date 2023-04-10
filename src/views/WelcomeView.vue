@@ -48,6 +48,18 @@ export default {
     selectKitten(kittenUrl) {
       this.updateKittenInfo({ field: "kittenUrl", value: kittenUrl });
     },
+    goPlay() {
+      if (!this.kittenUrl || !this.kittenName) {
+        this.$toast.add({
+          severity: "error",
+          summary: "Invalid",
+          detail: "Select cat image and enter name of the cat",
+          life: 3000,
+        });
+        return;
+      }
+      this.$router.push("/");
+    },
 };
 </script>
 
