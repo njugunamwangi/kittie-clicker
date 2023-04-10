@@ -1,6 +1,11 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
+        <img
+          v-for="url in kittens"
+          @click="selectKitten(url)"
+          :src="url"
+          :key="url"
+          class="p-m-2"
+        />
   </div>
 </template>
 
