@@ -26,7 +26,7 @@ pipeline {
 
     stage('Build') {
       steps {
-        sh 'touch Dockerfile && docker build -f Dockerfile .'
+        sh 'docker build -f Dockerfile .'
       }
     }
 
