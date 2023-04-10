@@ -8,7 +8,9 @@
 
 <script>
 import { mapState } from "vuex";
+
 export default {
+  name: "MainView",
   data: function () {
     return {
       purrs: 0,
