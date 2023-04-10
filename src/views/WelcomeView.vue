@@ -12,7 +12,8 @@
 <script>
 export default {
   name: "WelcomeView",
-  components: {},
+    Button,
+    InputText,
 };
 </script>
 
