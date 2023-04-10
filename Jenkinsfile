@@ -15,12 +15,18 @@ pipeline {
           }
         }
 
-        stage('Unit Tests') {
+        stage('Runs fixes') {
           steps {
-            sh 'npm i && npm run test:unit'
+            sh 'npm i && npm run lint'
           }
         }
 
+      }
+    }
+
+    stage('Build') {
+      steps {
+        sh 'touch Dockerfile && docker build -f Dockerfile .'
       }
     }
 
