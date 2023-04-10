@@ -1,4 +1,10 @@
 <template>
+  <div class="welcome-page p-grid">
+    <div class="p-col-6 p-offset-3">
+      <h1>Welcome to Kittie Clicker</h1>
+
+      <div>
+        <h2 class="p-mt-5">Choose Your kitten:</h2>
         <img
           v-for="url in kittens"
           @click="selectKitten(url)"
@@ -22,6 +28,7 @@
       </div>
       <Button @click="goPlay" label="Go Play" class="p-button-outlined" />
     </div>
+  </div>
 </template>
 
 <script>
