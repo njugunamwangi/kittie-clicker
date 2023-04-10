@@ -7,6 +7,8 @@
           class="p-m-2"
         />
   </div>
+      <Button @click="goPlay" label="Go Play" class="p-button-outlined" />
+    </div>
 </template>
 
 <script>
