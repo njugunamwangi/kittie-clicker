@@ -12,7 +12,7 @@
           :key="url"
           class="p-m-2"
         />
-  </div>
+      </div>
       <div class="p-field">
         <label for="name" class="p-mr-3 p-my-5">Kitten's Name:</label>
         <InputText
@@ -35,6 +35,7 @@
 import Button from "primevue/button";
 import InputText from "primevue/inputtext";
 import { mapMutations, mapState } from "vuex";
+
 export default {
   name: "WelcomeView",
   components: {
