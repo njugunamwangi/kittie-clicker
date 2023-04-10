@@ -44,6 +44,7 @@ export default {
   computed: {
     ...mapState(["kittenName", "kittenUrl", "kittens"]),
   },
+  methods: {
     ...mapMutations(["updateKittenInfo"]),
     selectKitten(kittenUrl) {
       this.updateKittenInfo({ field: "kittenUrl", value: kittenUrl });
@@ -60,6 +61,7 @@ export default {
       }
       this.$router.push("/");
     },
+  },
 };
 </script>
 
