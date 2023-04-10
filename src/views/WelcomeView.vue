@@ -55,8 +55,9 @@ export default {
         this.$toast.add({
           severity: "error",
           summary: "Invalid",
-          detail: "Select cat image and enter name of the cat",
-          life: 3000,
+          detail: "Select a cat image and enter name of the cat",
+          life: 5000,
+          group: "tr",
         });
         return;
       }
