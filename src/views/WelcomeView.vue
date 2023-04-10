@@ -41,6 +41,10 @@ export default {
     Button,
     InputText,
   },
+  computed: {
+    ...mapState(["kittenName", "kittenUrl", "kittens"]),
+  },
+    ...mapMutations(["updateKittenInfo"]),
 };
 </script>
 
