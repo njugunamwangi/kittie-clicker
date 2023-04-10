@@ -15,3 +15,9 @@ export default {
   components: {},
 };
 </script>
+
+<style scoped lang="sass">
+.p-inputtext
+  border: 1px solid black
+  width: 300px
+</style>
