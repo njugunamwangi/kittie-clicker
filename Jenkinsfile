@@ -17,7 +17,7 @@ pipeline {
 
         stage('Unit Tests') {
           steps {
-            sh 'npm i && npm test:unit'
+            sh 'npm i && npm run test:unit'
           }
         }
 
