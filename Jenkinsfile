@@ -26,7 +26,7 @@ pipeline {
 
     stage('Build') {
       steps {
-        sh 'docker build -f Dockerfile .'
+        sh 'docker build -f Dockerfile . -t njugunamwangi/kittie-clicker:latesr'
       }
     }
 
@@ -42,7 +42,7 @@ pipeline {
 
     stage('Push') {
       steps {
-        sh 'docker push njugunamwangi/kittie-clicker:latest'
+        sh 'docker push njugunamwangi/kittie-clicker'
       }
     }
 
