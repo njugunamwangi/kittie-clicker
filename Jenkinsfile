@@ -42,7 +42,7 @@ pipeline {
 
     stage('Push') {
       steps {
-        sh 'docker push njugunamwangi/kittie-clicker:latest'
+        sh 'docker image push njugunamwangi/kittie-clicker:latest'
       }
     }
 
