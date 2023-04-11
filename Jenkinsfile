@@ -26,7 +26,7 @@ pipeline {
 
     stage('Build') {
       steps {
-        sh 'docker image build -f Dockerfile . -t njugunamwangi/kittie-clicker:latesr'
+        sh 'docker image build -f Dockerfile . -t njugunamwangi/kittie-clicker:latest'
       }
     }
 
